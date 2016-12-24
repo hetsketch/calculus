@@ -76,7 +76,6 @@
     padding: 0;
     text-align: center;
     border: 1px solid black;
-
 }
 
 .button {
@@ -127,6 +126,10 @@
 }
 
 
+.modes {
+    margin-top: 30px;
+}
+
 .modes ul {
     list-style: none;
     padding: 0;
@@ -157,6 +160,32 @@
     text-decoration: underline;
 }
 
+#welcome {
+    transition: all 1s ease-in;
+}
+
+#welcome.hide {
+    display: none;
+}
+
+#calc-wrapper {
+    display: none;
+    opacity: 0;
+}
+
+#calc-wrapper.visible {
+    display: block;
+    animation: reveal 1s forwards;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 .clearfix:after {
